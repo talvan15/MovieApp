@@ -26,7 +26,9 @@ export default function Index() {
 
   return (
     <View style={style.container}>
+      <View style={{marginTop: 50, marginBottom: 20}}>
       <SearchBar />
+      </View>
       <FlatList 
         horizontal
         data={movies}
@@ -49,6 +51,7 @@ const style = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#242A32",
+    alignItems: "center",
   },
   text: {
     color: "#FFFFFF",
