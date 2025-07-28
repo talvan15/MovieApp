@@ -12,3 +12,6 @@ export const api = axios.create({
   },
   timeout: 1000,
 })
+
+export const getPopularMovies = () => api.get('/movie/popular')
+export const getMoviesDEtails = (id: number) => api.get('/movie/${id}')
